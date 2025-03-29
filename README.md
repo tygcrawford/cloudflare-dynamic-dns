@@ -2,7 +2,7 @@
 
 ## Secrets File
 
-Place a secrets.json file in the repository root directory with the following structure:
+Place a `secrets.json` file in the repository root directory with the following structure:
 
 ```json
 {
