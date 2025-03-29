@@ -1,4 +1,4 @@
-import os, sys, requests, json, argparse
+import os, requests, json, argparse
 
 class CloudflareDDNS:
   def __init__(self):
