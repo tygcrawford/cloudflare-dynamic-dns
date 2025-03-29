@@ -29,7 +29,7 @@ class CloudflareDDNS:
 
   def get_current_ip(self):
     log('checking public ip...')
-    ip=requests.get("https://ifcfg.me").text
+    ip=requests.get('https://api.ipify.org').text
     log(f'public ip: {ip}')
     return ip
 
@@ -77,8 +77,6 @@ parser.add_argument('-s', '--silent', action='store_true', help='enable silent r
 args = parser.parse_args()
 
 cddns = CloudflareDDNS()
-
-silent=args.silent
 
 if(args.records):
   print(cddns.get_dns_records())
